@@ -1,0 +1,399 @@
+/* =====================================
+   HOMEHELP CONNECT - MAIN STYLESHEET
+   ===================================== */
+
+/* 1. General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #26352d;
+    background-color: #f8f7f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #176b4d;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #d89b45;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #176b4d;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e1e5dc;
+    margin: 25px auto;
+    max-width: 1100px;
+}
+
+/* 2. Header */
+header {
+    color: white;
+    text-align: center;
+    padding: 35px 20px 0;
+    background-color: #174c38;
+    background-image:
+        linear-gradient(rgba(15, 58, 40, 0.82), rgba(15, 58, 40, 0.82)),
+        url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85");
+    background-position: center;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #f3ead9;
+    margin-bottom: 25px;
+}
+
+/* 3. Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 18px 10px;
+}
+
+header nav {
+    background-color: rgba(10, 35, 25, 0.45);
+}
+
+nav a {
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: #174c38;
+    background-color: #f3ead9;
+}
+
+/* 4. Main Content */
+main {
+    width: 90%;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+main section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(30, 55, 40, 0.06);
+}
+
+main section p:last-child {
+    margin-bottom: 0;
+}
+
+/* 5. Page Introduction Sections */
+#about,
+#contact-intro {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+#about,
+#contact-intro {
+    padding: 55px 35px;
+    border-left: 6px solid #d89b45;
+}
+
+/* 6. Services and Values Cards */
+#values,
+#why-choose-us {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#values h2,
+#why-choose-us h2 {
+    grid-column: 1 / -1;
+}
+
+article {
+    padding: 22px;
+    background-color: #f3f6ef;
+    border-radius: 10px;
+    border-bottom: 4px solid #176b4d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(30, 55, 40, 0.12);
+}
+
+article h3 {
+    color: #176b4d;
+}
+
+/* Service cards with photos */
+#services article:nth-of-type(1) {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80");
+}
+
+#services article:nth-of-type(2) {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url("https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=800&q=80");
+}
+
+#services article:nth-of-type(3) {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url("https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80");
+}
+
+#services article {
+    background-size: cover;
+    background-position: center;
+}
+
+/* 7. Lists */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* 8. Buttons and Call-to-Action Links */
+button,
+input[type="submit"],
+#services-link > a,
+#get-started > a {
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    background-color: #176b4d;
+    color: white;
+    padding: 13px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+#services-link > a:hover,
+#get-started > a:hover {
+    background-color: #d89b45;
+    color: #173d2d;
+    transform: translateY(-2px);
+}
+
+/* 9. Contact Information */
+#contact-information {
+    border-top: 4px solid #176b4d;
+}
+
+#contact-information a {
+    overflow-wrap: anywhere;
+}
+
+/* 10. Contact Form */
+form {
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #26352d;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #26352d;
+    background-color: #fff;
+    border: 1px solid #cbd5ca;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #176b4d;
+    border-color: #176b4d;
+}
+
+/* 11. Footer */
+footer {
+    background-color: #174c38;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav {
+    padding-bottom: 0;
+}
+
+footer nav a {
+    color: #f3ead9;
+}
+
+footer nav a:hover {
+    background-color: #f3ead9;
+    color: #174c38;
+}
+
+/* 12. Responsive Design for Phones and Tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    main section {
+        padding: 22px 18px;
+    }
+
+    #about,
+    #contact-intro {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    #values,
+    #why-choose-us {
+        grid-template-columns: 1fr;
+    }
+}
+
+.main-nav {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px;
+    background-color: #174c38;
+}
+
+.main-nav a {
+    display: inline-block !important;
+    visibility: visible !important;
+    color: white !important;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    background-color: #f3ead9;
+    color: #174c38 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeHelp Connect</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<header>
+    <h1>HomeHelp Connect</h1>
+    <p>Your trusted partner for home services.</p>
+
+</header>
+<nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="service.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+
+
+    <h2>Request a Home Service</h2>
+    <p>Tell us what you need,and we will help you find a suitable service.</p>
+
+<form action="#" method="get">
+    <label for="customer-name">Your full name:</label>
+    <input 
+    type="text" 
+    name="customer-name" 
+    id="customer-name"
+placeholder="Enter Your Full Names"
+    required
+    />
+    
+
+<label for="service">Choose a service:</label>
+<select
+ name="service" 
+ id="service"
+ required>
+ <option value="cleaning">House Cleaning</option>
+ <option value="cooking">Cooking</option>
+ <option value="childcare">Childcare</option>
+
+</select>
+
+<label for="prefered-date">Prefered-date</label>
+<input
+ type="date"
+ id="prefered-date"
+ name="prefered-date"
+ required
+ />
+<label for="budget">Your budget (KES):</label>
+<input 
+type="number"
+id="budget"
+name="budget"
+min="0"
+placeholder="e.g.2000"
+required
+
+/>
+
+<label for="message">Your message:</label>
+<textarea 
+name="message" 
+id="message"
+rows="5"
+placeholder="Tell us  what help you need..."
+required
+
+></textarea>
+
+
+<button type="submit">Request Service</button>
+
+</form>
+    
+</section>
+
+
+<FOoter>
+    <P>&copy; 2026 HomeHelp-Connect.All rights reserved.</P>
+    <p>Making home care easier for everyone.</p>
+
+</FOoter>
+
+</body>
+</html>
+
+
+
+
+
+
