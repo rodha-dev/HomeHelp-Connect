@@ -129,6 +129,10 @@ License
 
 This project is intended to be released under the MIT License. Add a LICENSE file containing the MIT License text to the repository.
 
+
+github Live App : https://rodha-dev.github.io/HomeHelp-Connect/
+
+github repo : https://github.com/rodha-dev/HomeHelp-Connect
 API LINK"https://homehelp-connect-irl5.onrender.com"
 
 figma link : (https://www.figma.com/proto/QQMaIKR4xsyaOTUtvAVEXN/Untitled?node-id=2011-14909&t=u4boiEB9FTvKcP5n-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
