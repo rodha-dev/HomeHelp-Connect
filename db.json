@@ -1,0 +1,32 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "name": "House Cleaning",
+      "description": "Professional cleaning to keep your home fresh and tidy.",
+      "price": 1500
+    },
+    {
+      "id": "2",
+      "name": "Cooking",
+      "description": "Meal preparation for your household.",
+      "price": 1200
+    },
+    {
+      "id": "3",
+      "name": "Childcare",
+      "description": "Reliable support caring for children at home.",
+      "price": 1800
+    }
+  ],
+  "requests": [
+    {
+      "customer-name": "Rodha Ahmed",
+      "service": "cooking",
+      "prefered-date": "2026-10-27",
+      "budget": "1000",
+      "message": "i need a professional cooker",
+      "id": 1
+    }
+  ]
+}

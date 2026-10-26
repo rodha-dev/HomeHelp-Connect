@@ -26,7 +26,7 @@
     <h2>Request a Home Service</h2>
     <p>Tell us what you need,and we will help you find a suitable service.</p>
 
-<form action="#" method="get">
+<form id="service-request-form">
     <label for="customer-name">Your full name:</label>
     <input 
     type="text" 
@@ -78,7 +78,7 @@ required
 
 
 <button type="submit">Request Service</button>
-
+<p id="form-status" role="status" aria-live="polite"></p>
 </form>
     
 </section>
@@ -90,8 +90,16 @@ required
 
 </FOoter>
 
+<script type="module" src="./src/main.js"></script>
+
+
+
 </body>
 </html>
+
+
+
+
 
 
 
