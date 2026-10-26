@@ -121,13 +121,21 @@ The frontend will be deployed using GitHub Pages or another suitable hosting pla
 
 If the application requires a separate API, the API must also be deployed to an accessible hosting service. A local address such as localhost:3001 is only accessible on the developer’s machine and will not work for public users.
 
-Live Application: Add your deployment URL here once available.
+
 
 GitHub Repository: Add your repository URL here.
 
 License
 
 This project is intended to be released under the MIT License. Add a LICENSE file containing the MIT License text to the repository.
+
+API LINK"https://homehelp-connect-irl5.onrender.com"
+
+
+
+
+
+
 
 Author
 
